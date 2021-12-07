@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="ad">Adınızı Giriniz :</label>
+            <input type="text" id="ad"><br><br>
+            <label for="soyad">Soyadınızı Giriniz:</label>
+            <input type="text" id="soyad"><br><br>
+            <label for="il">Şehir Giriniz:</label>
+            <input list="sehirler" id="il" name="il"><br><br>
+            <datalist id="sehirler">
+                <option value="Ankara">Ankara</option>
+                <option value="Istanbul">Istanbul</option>
+                <option value="Bursa">Bursa</option>
+                <option value="Konya">Konya</option>
+            </datalist>
+        </fieldset>
+        
+
+        <input type="radio" name="cinsiyet" value="erkek" id="erkek">
+        <label for="erkek">Erkek</label>
+
+        <input type="radio" name="cinsiyet" value="kadin" id="kadin">
+        <label for="kadin">Kadın</label><br><br>
+        
+        <fieldset>
+            <legend>Renkler</legend>
+            <input type="checkbox" name="chbmavi" id="mavi" value="mavi" checked="checked">
+            <label for="mavi">Mavi</label>
+            <input type="checkbox" name="chbyesil" id="yesil" value="yesil">
+            <label for="yesil">Yeşil</label>
+            <input type="checkbox" name="chbsari" id="sari" value="sari">
+            <label for="sari">Sarı</label>
+        </fieldset>
+        
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Formu Sil">
+        <input type="button" value="Normal Button" onclick="alert('Merhaba')">
+        <br><br>
+        <select name="arabalar" id="arabalar">
+            <option value="bmw">Bmw</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="peugeot">Peugeot</option>
+        </select>
+        <br><br>
+        <label for="adres">Adres:</label>
+        <textarea name="" id="adress" cols="30" rows="10"></textarea>
+        
+
+    </form>
+</body>
+</html>
